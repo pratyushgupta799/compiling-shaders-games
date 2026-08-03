@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compiling Shaders Games — Play fun, cartoony games</title>
+    <meta
+      name="description"
+      content="Compiling Shaders Games makes playful cartoony adventures. Dive into Barely Breathing — a physics puzzle platformer starring Sheen the goldfish."
+    />
+    <link rel="icon" type="image/png" href="/assets/logos/studio/04_CS_Logo_Square_Color.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bubble-field" aria-hidden="true" id="bubbles"></div>
+
+    <header class="site-header" id="top">
+      <nav class="nav">
+        <a class="nav-brand" href="#top" aria-label="Compiling Shaders Games home">
+          <img
+            src="/assets/logos/studio/04_CS_Logo_Square_Color.png"
+            alt=""
+            class="nav-brand-mark"
+            width="44"
+            height="44"
+          />
+          <span class="nav-brand-text">Compiling Shaders Games</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#games">Games</a></li>
+          <li><a href="#gameplay">Gameplay</a></li>
+          <li><a href="#studio">Studio</a></li>
+          <li><a class="nav-cta" href="#wishlist">Join</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero: full-bleed key art, brand-first composition -->
+      <section class="hero" aria-labelledby="hero-brand">
+        <div class="hero-media">
+          <img
+            class="hero-bg"
+            src="/assets/keyart/EmptyBackground.png"
+            alt="A cozy, plant-filled living room lit by golden sunlight — the world of Barely Breathing."
+          />
+          <div class="hero-wash" aria-hidden="true"></div>
+        </div>
+
+        <div class="hero-content">
+          <img
+            class="hero-studio-logo"
+            src="/assets/logos/studio/02_CS_Logo_Full_White.png"
+            alt=""
+            aria-hidden="true"
+          />
+          <h1 class="hero-brand" id="hero-brand">Compiling Shaders Games</h1>
+          <p class="hero-tagline">Cartoony games that splash, bounce, and stick with you.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#games">Play our games</a>
+            <a class="btn btn-ghost" href="#trailer">Watch trailer</a>
+          </div>
+        </div>
+
+        <img
+          class="hero-float sheen"
+          src="/assets/keyart/Sheen_The_Fish.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          class="hero-float matt"
+          src="/assets/keyart/Matt_The_Cat.png"
+          alt=""
+          aria-hidden="true"
+        />
+      </section>
+
+      <!-- Intro copy — King-style “play our games” band -->
+      <section class="intro" id="about-games">
+        <div class="container intro-inner">
+          <h2>Play our fun and popular games!</h2>
+          <p>
+            Inside the Compiling Shaders studio you’ll find bright, cartoony adventures made for browsers,
+            desktops, and living-room laughs. Jump in, sync the vibes, and get ready to spill a little water.
+          </p>
+          <a class="text-link" href="#games">All games</a>
+        </div>
+      </section>
+
+      <!-- Featured game — Barely Breathing -->
+      <section class="featured" id="games" aria-labelledby="featured-heading">
+        <div class="container">
+          <p class="eyebrow">Featured Game</p>
+          <h2 id="featured-heading">Barely Breathing</h2>
+          <p class="featured-lead">
+            Spill and splash away — make your own path. A 3D physics puzzle-platformer starring Sheen, a goldfish
+            trying to escape the house.
+          </p>
+
+          <div class="featured-stage">
+            <img
+              class="featured-art"
+              src="/assets/keyart/01_MainKeyArt_Logo.png"
+              alt="Barely Breathing key art with Sheen the goldfish and Matt the cat in a sunny living room."
+            />
+            <div class="featured-panel">
+              <img
+                class="featured-logo"
+                src="/assets/logos/game/04_LogoBlackOutline.png"
+                alt="Barely Breathing"
+              />
+              <ul class="meta-list">
+                <li><span>Genre</span> Puzzle / Platformer</li>
+                <li><span>Mode</span> Singleplayer</li>
+                <li><span>Release</span> 2026</li>
+                <li><span>Studio</span> Compiling Shaders Games</li>
+              </ul>
+              <p>
+                Jump through pots, knock over glasses, dash underwater, and collect rubber ducks for extra
+                breathing time — all wrapped in a cozy cel-shaded art style.
+              </p>
+              <div class="hero-actions">
+                <a
+                  class="btn btn-primary"
+                  href="https://discord.gg/K2zEs6WmFF"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="wishlist"
+                  >Join the Discord</a
+                >
+                <a class="btn btn-secondary" href="#trailer">Watch trailer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Characters -->
+      <section class="characters" aria-labelledby="cast-heading">
+        <div class="container">
+          <h2 id="cast-heading">Meet the splash squad</h2>
+          <p class="section-sub">The fish, the cat, and a house full of trouble.</p>
+          <div class="cast-row">
+            <article class="cast">
+              <img src="/assets/keyart/Sheen_The_Fish.png" alt="Sheen the goldfish" />
+              <h3>Sheen</h3>
+              <p>A wide-eyed goldfish with one mission: get out of this house — splash by splash.</p>
+            </article>
+            <article class="cast">
+              <img src="/assets/keyart/Matt_The_Cat.png" alt="Matt the cat in a yellow bow tie" />
+              <h3>Matt</h3>
+              <p>Bow-tied chaos agent. Soft paws, sharp curiosity, zero chill about fish bowls.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trailer -->
+      <section class="trailer-section" id="trailer" aria-labelledby="trailer-heading">
+        <div class="container">
+          <h2 id="trailer-heading">Watch the trailer</h2>
+          <p class="section-sub">See Sheen hop, splash, and barely breathe through the house.</p>
+          <div class="trailer-frame">
+            <video
+              class="trailer-video"
+              controls
+              playsinline
+              poster="/assets/trailer/Thumbnail_AnnouncementTrailer_BarelyBreathing.png"
+              preload="metadata"
+            >
+              <source src="/assets/trailer/trailer.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gameplay gallery -->
+      <section class="gameplay" id="gameplay" aria-labelledby="gameplay-heading">
+        <div class="container">
+          <h2 id="gameplay-heading">Gameplay moments</h2>
+          <p class="section-sub">Physics puddles, plant pots, and puzzle chaos.</p>
+
+          <div class="shot-grid">
+            <figure class="shot">
+              <img src="/assets/screenshots/Screenshot1.png" alt="Sheen leaping from a fishbowl near a Rubik's cube." loading="lazy" />
+            </figure>
+            <figure class="shot">
+              <img src="/assets/screenshots/Screenshot2.png" alt="Sheen jumping between wall planters under a guitar." loading="lazy" />
+            </figure>
+            <figure class="shot">
+              <img src="/assets/screenshots/Screenshot3.png" alt="Sheen swimming among seaweed and coral inside a fish tank." loading="lazy" />
+            </figure>
+            <figure class="shot">
+              <img src="/assets/screenshots/Screenshot4.png" alt="Sheen swimming along a rooftop rain gutter." loading="lazy" />
+            </figure>
+            <figure class="shot">
+              <img src="/assets/screenshots/Screenshot5.png" alt="Sheen lying in a spilled water puddle beside a tipped bottle." loading="lazy" />
+            </figure>
+          </div>
+
+          <div class="gif-strip" aria-label="Animated gameplay clips">
+            <figure class="gif-frame">
+              <img src="/assets/gifs/Fishbowl_GIF.gif" alt="Animated clip of Sheen in a fishbowl." loading="lazy" />
+              <figcaption>Bowl hops</figcaption>
+            </figure>
+            <figure class="gif-frame">
+              <img src="/assets/gifs/PotsJumping_GIF.gif" alt="Animated clip of jumping between pots." loading="lazy" />
+              <figcaption>Pot parkour</figcaption>
+            </figure>
+            <figure class="gif-frame">
+              <img src="/assets/gifs/TeaSetPhysics_GIF.gif" alt="Animated clip of tea set physics." loading="lazy" />
+              <figcaption>Spill physics</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Studio / King-style careers-adjacent band -->
+      <section class="studio" id="studio" aria-labelledby="studio-heading">
+        <div class="studio-bg" aria-hidden="true"></div>
+        <div class="container studio-inner">
+          <img
+            class="studio-logo"
+            src="/assets/logos/studio/01_CS_Logo_Full_Color.png"
+            alt="Compiling Shaders Games"
+          />
+          <h2 id="studio-heading">Come hang at Compiling Shaders</h2>
+          <p>
+            We’re Jaspreet Singh (game design &amp; art) and Pratyush Gupta (programming &amp; business) —
+            crafting Barely Breathing since November 2025. Want to cheer us on, press us, or just say hi?
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:gamebarelybreathing@gmail.com">Contact us</a>
+            <a class="btn btn-ghost" href="https://discord.gg/K2zEs6WmFF" target="_blank" rel="noopener noreferrer"
+              >Join Discord</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-about">
+          <img
+            src="/assets/logos/studio/02_CS_Logo_Full_White.png"
+            alt="Compiling Shaders Games"
+            class="footer-logo"
+          />
+          <p>
+            Compiling Shaders Games is an indie studio making cartoony interactive entertainment — starting with
+            Barely Breathing, a physics playground people love to splash through.
+          </p>
+        </div>
+
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#gameplay">Gameplay</a></li>
+            <li><a href="#studio">Studio</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Community</h3>
+          <ul>
+            <li><a href="https://x.com/BarelyBGame" target="_blank" rel="noopener noreferrer">X / Twitter</a></li>
+            <li>
+              <a href="https://www.instagram.com/barelybreathinggame/" target="_blank" rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@BarelyBreathingGame" target="_blank" rel="noopener noreferrer"
+                >YouTube</a
+              >
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@barelybreathinggame" target="_blank" rel="noopener noreferrer"
+                >TikTok</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://bsky.app/profile/barelybreathingame.bsky.social"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Bluesky</a
+              >
+            </li>
+            <li>
+              <a href="https://discord.gg/K2zEs6WmFF" target="_blank" rel="noopener noreferrer">Discord</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Press</h3>
+          <ul>
+            <li><a href="mailto:gamebarelybreathing@gmail.com">Press email</a></li>
+            <li><a href="mailto:pratyushgupta04@gmail.com">Pratyush Gupta</a></li>
+            <li><a href="mailto:matharoo3d@gmail.com">Jaspreet Singh</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Compiling Shaders Games. Barely Breathing and related marks are trademarks of Compiling Shaders Games.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
